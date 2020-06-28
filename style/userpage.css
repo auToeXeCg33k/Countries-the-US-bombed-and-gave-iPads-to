@@ -1,0 +1,88 @@
+@keyframes playing {
+    from{transform: scale(1.04)}
+    to{transform: scale(1.0)}
+}
+
+@keyframes err {
+    from{color: red}
+    to{color: #a13229}
+}
+
+@keyframes not {
+    from{color: darkgoldenrod}
+    to{color: gold}
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 4px;
+    justify-content: space-around;
+}
+
+main > div:first-child {
+    margin: 7px 0;
+    padding: 10px 25px;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+}
+
+main span {
+    display: block;
+    margin-top: 20px;
+}
+
+.error, .notice {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.error{
+    animation: err 2s linear infinite;
+    animation-direction: alternate;
+}
+
+.notice{
+    animation: not 2s linear infinite;
+    animation-direction: alternate;
+}
+
+main a:visited, main a:link{
+    margin: 10px 0;
+    display: block;
+    padding: 20px 20px;
+    background: #e5e4e1;
+    border: 2px solid #001365;
+    text-decoration: none;
+    color: #001365;
+    text-align: center;
+}
+
+main button {
+    margin: 10px 0;
+    display: inline-flex;
+    padding: 20px 20px;
+    background: #e5e4e1;
+    border: 2px solid #001365;
+    text-decoration: none;
+    color: #001365;
+    text-align: center;
+    cursor: pointer;
+}
+
+main a:hover, main button:hover {
+    background: #001365;
+    color: antiquewhite;
+}
+
+/*trump*/
+aside div:nth-child(2) {
+    padding-top: 35px;
+    font-size: 11px;
+    text-align: center;
+}
+
+.nowplaying {
+    animation: playing 2s linear infinite;
+    animation-direction: alternate;
+}

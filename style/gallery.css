@@ -1,0 +1,39 @@
+@keyframes popout {
+    from {
+        transform: scale(1, 1);
+    }
+    to {
+        transform: scale(1.1, 1.1);
+    }
+}
+.galleryrow {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+.gallerycolumn {
+    flex: 50%;
+    max-width: 50%;
+    padding: 0 4px;
+}
+.galleryitem {
+    margin-top: 4px;
+    vertical-align: middle;
+    width: 100%;
+}
+.galleryitem:hover {
+    animation: popout 100ms linear;
+    animation-fill-mode: both;
+}
+/*trump*/
+aside div:nth-child(2) {
+    padding-top: 17px;
+    font-size: 11px;
+    text-align: center;
+}
+@media (max-width: 1000px) {
+    .gallerycolumn {
+        flex: 100%;
+        max-width: 100%;
+    }
+}

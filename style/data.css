@@ -1,0 +1,30 @@
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #a13229;
+}
+table td, table th {
+    border: 1px solid dimgray;
+    padding: 8px;
+    color: #cccccc;
+}
+table tr:nth-child(odd) {
+    background-color: #202020;
+}
+table tr:nth-child(even) {
+    background-color: #464843;
+}
+table tr:hover {
+    background-color: #4372af;
+}
+/*trump*/
+aside div:nth-child(2) {
+    padding-top: 30px;
+    font-size: 11px;
+    text-align: center;
+}

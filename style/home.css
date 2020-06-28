@@ -1,0 +1,48 @@
+@media print {
+    body {
+        background-color: #FFFFFF;
+    }
+    body p, body span {
+        font-size: 12px;
+        color: black;
+    }
+    body h1 {
+        font-size: 14px;
+        color: black;
+    }
+    body img {
+        display:none;
+    }
+    body nav {
+        display:none;
+    }
+    body a {
+        display: none;
+    }
+}
+@media screen {
+    main {
+        padding: 25px;
+    }
+    main p {
+        padding-top: 18px;
+        text-indent: 50px;
+        text-align: justify-all;
+        letter-spacing: 2px;
+    }
+    main p::first-letter {
+        font-size: 30px;
+        font-weight: bold;
+        color: darkgoldenrod;
+    }
+    span {
+        color:darkgoldenrod;
+        font-weight: bold;
+    }
+    /*trump*/
+    aside div:nth-child(2) {
+        padding-top: 35px;
+        font-size: 11px;
+        text-align: center;
+    }
+}

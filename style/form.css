@@ -1,0 +1,80 @@
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 4px;
+    justify-content: space-around;
+}
+main a:link, main a:visited{
+    text-decoration: none;
+    border: 2px solid darkblue;
+    background: white;
+    font-weight: bold;
+    color: darkblue;
+    padding: 0 4px;
+}
+
+main a:hover{
+    color: white;
+    background: darkblue;
+}
+
+main form {
+    padding: 10px 25px;
+}
+
+form > div:last-child {
+    padding-top: 20px;
+}
+
+legend {
+    padding-top: 35px;
+}
+
+fieldset{
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+input[type=text], input[list="genderlist"], input[type="date"]{
+    padding: 4px 12px;
+    width: 300px;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: width 0.4s ease-in-out;
+}
+
+select {
+    width: 300px;
+    display: block;
+    padding: 8px 12px;
+    border: 1px solid #ccc;;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=text]:focus, input[list="genderlist"]:focus {
+    width: 75%;
+    min-width: 300px;
+}
+
+input[type=text]:focus, input[list="genderlist"]:focus, input[type="date"]:focus {
+    background-color: #4372af;
+}
+aside div:nth-child(2) {
+    padding-top: 35px;
+    font-size: 11px;
+    text-align: center;
+}
+
+#message{
+    display: block;
+    padding: 15px 20px 0;
+    font-weight: bolder;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    margin-bottom: 20px;
+}

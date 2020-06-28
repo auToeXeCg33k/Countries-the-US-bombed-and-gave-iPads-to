@@ -1,0 +1,59 @@
+@keyframes rainbow {
+    0%, 100% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 100% 0;
+    }
+}
+
+@keyframes eagle {
+    from {
+        transform: rotateZ(0deg) scale(0.2);
+    }
+    to {
+        transform: rotateZ(360deg) scale(1);
+    }
+}
+
+div main img {
+    width: 360px;
+    height: 640px;
+    padding-top: 20px;
+}
+
+#eagle {
+    z-index: 9;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 200%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -100px;
+    animation: eagle 2s infinite linear;
+    animation-direction: alternate;
+}
+
+.rainbow-text {
+    background-image: repeating-linear-gradient(45deg, violet, indigo, blue, green, yellow, orange, red, violet);
+    text-align: center;
+    background-size: 50% 50%;
+    -webkit-background-clip: text; /*a nem webkites background-clip nem ismeri a text erteket*/
+    -webkit-text-fill-color: transparent;
+    font-size: 24px;
+    animation: rainbow 900ms infinite linear;
+}
+
+#content main p {
+    font-family: "Comic Sans MS", serif;
+    font-weight: bold;
+    padding: 20px 10px;
+}
+/*trump*/
+aside div:nth-child(2) {
+    padding-top: 15px;
+    font-size: 11px;
+    text-align: center;
+}
